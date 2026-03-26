@@ -1,2 +1,5 @@
-/cv
+.DS_Store
+cv/*
+!cv/cv.pdf
 *.jpg
+!image.jpg
