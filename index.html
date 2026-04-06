@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Academic website of Thanakrit Methasate, CPGS (1st year PhD) at the Faculty of Economics, University of Cambridge.">
   <title>Thanakrit Methasate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="site-title" href="#intro">Thanakrit Methasate</a>
+      <a class="site-title" href="#intro">
+        <span class="site-title-mark" aria-hidden="true">TM</span>
+        <span>Thanakrit Methasate</span>
+      </a>
       <nav class="site-nav" aria-label="Primary">
         <ul>
           <li><a href="#about">About</a></li>
@@ -29,82 +35,180 @@
         <div class="intro-copy">
           <p class="eyebrow">Academic Personal Website</p>
           <h1 id="intro-title">Thanakrit Methasate</h1>
-          <!-- Uncomment and edit the line below if you want to display your preferred name. -->
-          <!-- <p class="intro-meta"><strong>Preferred name:</strong> Palm</p> -->
-          <!-- Replace the subtitle below if your position or affiliation changes. -->
-          <p class="intro-subtitle">CPGS (1st year PhD) Faculty of Economics, University of Cambridge</p>
+          <p class="intro-subtitle">CPGS (1st year PhD) · Faculty of Economics, University of Cambridge</p>
+          <p class="intro-summary">
+            I work on econometrics theory and high-frequency finance, with current research centered on estimating
+            cross-covariance structures in microstructure noise.
+          </p>
+          <div class="intro-actions">
+            <a class="button-link button-link-primary" href="#contact">Get in touch</a>
+            <a class="button-link button-link-secondary" href="cv/cv.pdf">Download CV</a>
+          </div>
+          <ul class="intro-highlights" aria-label="Research highlights">
+            <li>Econometrics theory</li>
+            <li>High-frequency financial econometrics</li>
+            <li>Empirical finance</li>
+          </ul>
         </div>
-        <figure class="intro-photo">
-          <!-- Replace image.jpg in the repository root if you want to update the profile image. -->
-          <img class="intro-image" src="image.jpg" alt="Portrait of Thanakrit Methasate">
-        </figure>
+
+        <aside class="intro-aside" aria-label="Profile highlights">
+          <figure class="intro-photo">
+            <img class="intro-image" src="image.jpg" alt="Portrait of Thanakrit Methasate">
+          </figure>
+          <div class="intro-note">
+            <p class="intro-note-label">Current focus</p>
+            <p>Cross-covariance estimation for noisy high-frequency financial data.</p>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container">
-        <h2 id="about-title">About</h2>
-        <!-- Replace the paragraph below with a short academic biography and research background. -->
-        <p>
-          I am a current Certificate of Postgraduate Study (CPGS) student in the Faculty of Economics at the University of Cambridge (1st year PhD). 
-          My research interests cluster on econometrics theory, high-frequency financial econometrics, and empirical finance.
-        </p>
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Profile</p>
+            <h2 id="about-title">About</h2>
+          </div>
+          <p class="section-copy">
+            My work sits between theoretical econometrics and empirical finance, with a particular focus on how
+            modern statistical tools can better handle noisy market data.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="surface-card about-card">
+            <p>
+              I am a current Certificate of Postgraduate Study (CPGS) student in the Faculty of Economics at the
+              University of Cambridge (1st year PhD). My research interests cluster on econometrics theory,
+              high-frequency financial econometrics, and empirical finance.
+            </p>
+          </article>
+
+          <div class="fact-grid" aria-label="Academic overview">
+            <article class="fact-card">
+              <p class="fact-label">Current role</p>
+              <p class="fact-value">CPGS (1st year PhD)</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Institution</p>
+              <p class="fact-value">University of Cambridge</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Faculty</p>
+              <p class="fact-value">Economics</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Focus area</p>
+              <p class="fact-value">High-frequency econometrics</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="research-interests" aria-labelledby="interests-title">
       <div class="container">
-        <h2 id="interests-title">Research Interests</h2>
-        <!-- Replace or expand the list below with your current research interests. -->
-        <ul class="interest-list">
-          <li>Econometrics theory</li>
-          <li>High-frequency financial econometrics</li>
-          <li>Empirical finance</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="research-projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="projects-title">Current Project</h2>
-          <p>An overview of my current ongoing research project.</p>
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Focus</p>
+            <h2 id="interests-title">Research Interests</h2>
+          </div>
+          <p class="section-copy">
+            The core themes below shape both the technical and applied side of my research agenda.
+          </p>
         </div>
-        <!-- Replace the project title and description below with your current ongoing research project. -->
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>Estimating Cross-Covariance of Microstructure Noises</h3>
-            <p>
-              I am developing an estimator for the cross-covariance of microstructure noises in high-frequency financial data, 
-              in a general setting. The estimator is an application of the ReMeDI proposed by Li and Linton (2022).
-            </p>
+
+        <div class="interest-grid">
+          <article class="interest-card">
+            <h3>Econometrics Theory</h3>
+            <p>Developing inference and estimation tools for data environments where standard assumptions break down.</p>
+          </article>
+          <article class="interest-card">
+            <h3>High-Frequency Financial Econometrics</h3>
+            <p>Studying the statistical structure of transaction-level data, market frictions, and microstructure noise.</p>
+          </article>
+          <article class="interest-card">
+            <h3>Empirical Finance</h3>
+            <p>Connecting theoretical econometric methods to substantive questions in asset prices and financial markets.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="cv" aria-labelledby="cv-title">
-      <div class="container info-block">
-        <div>
-          <h2 id="cv-title">CV</h2>
-          <!-- Keep your academic CV as a PDF named cv.pdf inside the cv folder. -->
-          <p>Download a current copy of my academic CV.</p>
+    <section class="section" id="research-projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="project-layout surface-card">
+          <div class="project-main">
+            <p class="eyebrow">Current project</p>
+            <h2 id="projects-title">Estimating Cross-Covariance of Microstructure Noises</h2>
+            <p class="project-description">
+              I am developing an estimator for the cross-covariance of microstructure noises in high-frequency
+              financial data in a general setting. The estimator is an application of the ReMeDI framework proposed
+              by Li and Linton (2022).
+            </p>
+          </div>
+          <div class="project-side">
+            <div class="project-detail">
+              <p class="fact-label">Research lens</p>
+              <p>Measurement error, dependence structure, and reliable estimation under market microstructure frictions.</p>
+            </div>
+            <ul class="tag-list" aria-label="Project topics">
+              <li>Microstructure noise</li>
+              <li>Cross-covariance</li>
+              <li>ReMeDI</li>
+              <li>High-frequency data</li>
+            </ul>
+          </div>
         </div>
-        <a class="button-link" href="cv/cv.pdf">Download CV</a>
+      </div>
+    </section>
+
+    <section class="section section-accent" id="cv" aria-labelledby="cv-title">
+      <div class="container">
+        <div class="cv-banner">
+          <div class="cv-copy">
+            <p class="eyebrow eyebrow-light">Curriculum Vitae</p>
+            <h2 id="cv-title">A concise record of my academic background, research direction, and current work.</h2>
+            <p>Download a current copy of my academic CV.</p>
+          </div>
+          <a class="button-link button-link-inverse" href="cv/cv.pdf">Download CV</a>
+        </div>
       </div>
     </section>
 
     <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="container">
-        <h2 id="contact-title">Contact</h2>
-        <div class="contact-list">
-          <!-- Replace the email address below with your preferred contact email. -->
-          <p><strong>Email:</strong> <a href="mailto:thanakrit.methasate@gmail.com">thanakrit.methasate@gmail.com</a></p>
-          <!-- Replace the GitHub URL below with your profile link. -->
-          <p><strong>GitHub:</strong> <a href="https://github.com/tmethasate">github.com/tmethasate</a></p>
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let&rsquo;s connect</h2>
+          </div>
+          <p class="section-copy">
+            Email is the best way to reach me for research conversations, collaboration, or related academic inquiries.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:thanakrit.methasate@gmail.com">
+            <span class="contact-label">Email</span>
+            <strong>thanakrit.methasate@gmail.com</strong>
+            <span class="contact-link">Send a message</span>
+          </a>
+          <a class="contact-card" href="https://github.com/tmethasate">
+            <span class="contact-label">GitHub</span>
+            <strong>github.com/tmethasate</strong>
+            <span class="contact-link">View projects and code</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Academic website of Thanakrit Methasate.</p>
+    </div>
+  </footer>
 </body>
 </html>
